@@ -1,4 +1,4 @@
-//импортируем пакет Distance
+package ru.stqa.pft.distance;//импортируем пакет Distance
 import ru.stqa.pft.distance.Distance;
 
 public class Point {
