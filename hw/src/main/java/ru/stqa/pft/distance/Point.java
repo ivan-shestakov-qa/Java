@@ -1,5 +1,4 @@
 package ru.stqa.pft.distance;//импортируем пакет Distance
-import ru.stqa.pft.distance.Distance;
 
 public class Point {
     public static void main(String[] arg) {

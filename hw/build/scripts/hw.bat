@@ -17,7 +17,7 @@
 @if "%DEBUG%" == "" @echo off
 @rem ##########################################################################
 @rem
-@rem  sandbox startup script for Windows
+@rem  hw startup script for Windows
 @rem
 @rem ##########################################################################
 
@@ -32,7 +32,7 @@ set APP_HOME=%DIRNAME%..
 @rem Resolve any "." and ".." in APP_HOME to make it shorter.
 for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
 
-@rem Add default JVM options here. You can also use JAVA_OPTS and SANDBOX_OPTS to pass JVM options to this script.
+@rem Add default JVM options here. You can also use JAVA_OPTS and HW_OPTS to pass JVM options to this script.
 set DEFAULT_JVM_OPTS=
 
 @rem Find java.exe
@@ -67,20 +67,20 @@ goto fail
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\sandbox.jar
+set CLASSPATH=%APP_HOME%\lib\hw.jar;%APP_HOME%\lib\testng-7.5.jar;%APP_HOME%\lib\jsr305-3.0.1.jar;%APP_HOME%\lib\slf4j-api-1.7.32.jar;%APP_HOME%\lib\jcommander-1.78.jar;%APP_HOME%\lib\jquery-3.5.1.jar
 
 
-@rem Execute sandbox
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %SANDBOX_OPTS%  -classpath "%CLASSPATH%" MyFirstProgram %*
+@rem Execute hw
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %HW_OPTS%  -classpath "%CLASSPATH%" ru.stqa.pft.distance.Point %*
 
 :end
 @rem End local scope for the variables with windows NT shell
 if "%ERRORLEVEL%"=="0" goto mainEnd
 
 :fail
-rem Set variable SANDBOX_EXIT_CONSOLE if you need the _script_ return code instead of
+rem Set variable HW_EXIT_CONSOLE if you need the _script_ return code instead of
 rem the _cmd.exe /c_ return code!
-if  not "" == "%SANDBOX_EXIT_CONSOLE%" exit 1
+if  not "" == "%HW_EXIT_CONSOLE%" exit 1
 exit /b 1
 
 :mainEnd
