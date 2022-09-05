@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.pft.addressbook.TestAddressbookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-09-05T08:47:51" hostname="LICHTGESTALT" time="5.963">
+  <properties/>
+  <testcase name="testAddressbook" classname="ru.stqa.pft.addressbook.TestAddressbookTest" time="5.963"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+1662367671756	geckodriver	INFO	Listening on 127.0.0.1:60771
+1662367672515	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63954" "--remote-allow-hosts" "localhost" "--remote-allow-origins" "http://localhost:63954/" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofile9RXwON"
+1662367673115	Marionette	INFO	Marionette enabled
+1662367673120	Marionette	INFO	Listening on port 55796
+WebDriver BiDi listening on ws://localhost:63954
+Read port: 55796
+1662367673220	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofile9RXwON\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63954/devtools/browser/c8ae22d8-e352-455e-b0a2-18fa7578c405
+сент. 05, 2022 11:47:54 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost."
+1662367676631	Marionette	INFO	Stopped listening on port 55796
+]]></system-err>
+</testsuite>
